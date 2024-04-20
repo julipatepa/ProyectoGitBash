@@ -1,0 +1,385 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.bodi .nav li ul a{
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: start;
+  z-index: 999;
+  overflow-y: none;
+  flex-wrap: nowrap;
+  padding-left: 0px;
+  padding-right: 0px;
+  border:solid white 1px;
+  border-left: 0px;
+  border-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  
+  
+}
+.bodi .nav li ul{
+  border: solid white;
+  border-top: none;
+}
+
+.nav {
+  background-color:blue;
+  width: 100%;
+  z-index: 999;
+  display:inline-flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-direction:row ;
+  flex-wrap: nowrap;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content:space-between;
+  border-bottom: none;
+  
+  
+  overflow: none;
+  
+}
+li a{
+  color: white;
+  overflow-y: none;
+}
+.footer h4{
+  color: white;
+  
+}
+.footer p{
+  color: white;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  z-index: 999;
+  padding: 15px 20px;
+  display: inline-flex;
+  flex-direction: row;
+  z-index: 9999;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  
+  
+  
+  
+}
+
+.imagen_wsp{
+  border-radius: 100%;
+  align-items:start;
+}
+.menu {
+  display: none;
+  position: absolute;
+  z-index: 999;
+  background-color: rgb(0, 81, 255);
+  padding-left: 0px;
+  overflow-y: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.nav li ul a:hover {
+  align-items: space-evenly;
+  background-color: blue;
+}
+
+.nav li:hover > ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.logo {
+  display: flex;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  justify-items: flex-start;
+}
+
+.bodi {
+  background-color: rgb(12, 12, 12);
+  z-index: 1;
+  overflow-y: auto;
+  margin-top: 0;
+  padding: 0;
+ 
+}
+
+.animate__animated.animate__headShake {
+  --animate-duration: 2s;
+}
+
+
+
+
+.button {
+  margin-right:50px ;
+  padding: 0%;
+ 
+}
+/*pantallas pequeñas hasta 600px */
+@media screen and (max-width: 600px) {
+ 
+  .bodi {
+    font-size: 22px;
+    width: 80%;
+    margin: 5px auto;
+    justify-content: center;
+    border-left:none ;
+    border-right: none;
+  }
+  .carrusel {
+    border-left: solid white;
+    border-right: solid white;
+    border-radius: 1%;
+    border-left:none ;
+    border-right: none;
+  }
+  
+}
+/* pantallas medianas (entre 601px y 1024px de ancho) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .bodi {
+    font-size: 20px;
+    width: 90%;
+    justify-content: center;
+    margin: 5px auto;
+  }
+  .carrusel {
+    border-left: solid white;
+    border-right: solid white;
+    border-radius: 1%;
+    border-left:none ;
+    border-right: none;
+  }
+  
+}
+
+/*  pantallas grandes (más de 1024px de ancho) */
+@media screen and (min-width: 1025px) {
+ 
+  .bodi {
+    font-size: 16px;
+    width: 100%;
+    align-items: center;
+    margin: 0px;
+  }
+  .carrusel {
+    
+    border-left:none ;
+    border-right: none;
+  }
+}
+ .footer{
+  color: beige;
+  box-shadow: 2px;
+  padding: 20 px;
+  border: solid white;
+  border-top: none;
+  position:absolute;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: blue;
+  z-index: 1;
+  
+}
+.footer a{
+  color: white;
+}
+h4 {
+  border: solid white;
+  border-left: none;
+  border-right: none;
+ 
+  
+  
+  
+ 
+}
+p{
+  /*color: tomato;*/
+}
+
+button {
+  width: 200px;
+}
+
+
+
+.letras {
+  border: solid white;
+  text-decoration: none;
+  border-left: none;
+  border-right: none;
+}
+.mapa_sitio {
+  border: solid white;
+  border-left: none;
+  border-right: none;
+}
+.nuestro_cursos {
+  border: solid white;
+  border-left: none;
+  border-right: none;
+}
+.logo_footer {
+  border-radius: 100%;
+}
+.pie {
+  border: solid white;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* para pantallas medianas */
+ 
+  .imagen_wsp2 {
+    font-size: 14px;
+    width: 30px;
+    
+    justify-content: space-between;
+  }
+}
+/* pantallas grandes (más de 1024px de ancho) */
+@media screen and (min-width: 1025px) {
+  
+  .imagen_wsp2 {
+    font-size: 14px;
+    width: 30px;
+   
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 600px) {
+  /*  para pantallas pequeñas */
+  
+  .imagen_wsp2 {
+    font-size: 14px;
+    width: 30px;
+    
+    justify-content: space-between;
+  }
+}
+.imagen_wsp{
+  justify-content:space-between;
+  margin: 0;
+  padding: 0;
+  border-radius: 100%;
+  width: 5px;
+
+}
+.imagen_wsp2{
+  justify-content: space-between;
+ 
+  
+}
+@media screen and (max-width: 600px) {
+  /* para pantallas pequeñas */
+  .footer {
+    font-size: 14px;
+    width: 80%;
+    justify-content: space-between;
+    border-left:none ;
+    border-right: none;
+
+  }
+}
+/*  pantallas grandes (más de 1024px de ancho) */
+@media screen and (min-width: 1025px) {
+  .footer {
+    font-size: 18px;
+    width: 100%;
+    justify-content: start;
+    position: absolute;
+    border-left:none ;
+    border-right: none;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /*  para pantallas medianas */
+  .footer {
+    font-size: 16px;
+    width: 90%;
+    justify-content: start;
+    position: absolute;
+    border-left:none ;
+    border-right: none;
+  }
+}
+
+span{
+color: white;
+
+}
+label{
+  color: white;
+}
+.letras{
+  color: red;
+}
+h2{
+  color: white;
+}
+
+.contactos{
+  display: inline-flex;
+  flex-direction: row;
+  
+}
+@media screen and (max-width: 600px) {
+  /* para pantallas pequeñas */
+  .back {
+    background-color: #1032ee;
+
+  }
+}
+/*  pantallas grandes (más de 1024px de ancho) */
+@media screen and (min-width: 1025px) {
+  .back {
+    background-color: #1032ee;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /*  para pantallas medianas */
+  .back {
+    background-color: #1032ee;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* para pantallas pequeñas */
+  .nav{
+    border-left:none ;
+    border-right: none;
+     
+  }
+}
+/*  pantallas grandes (más de 1024px de ancho) */
+@media screen and (min-width: 1025px) {
+  .nav{
+    border-left:none ;
+    border-right: none;
+     
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /*  para pantallas medianas */
+  .nav{
+    border-left:none ;
+    border-right: none;
+    b
+  }
+}
