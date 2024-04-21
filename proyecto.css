@@ -66,9 +66,7 @@ li a{
   z-index: 9999;
   justify-content: space-between;
   flex-wrap: nowrap;
-  
-  
-  
+
   
 }
 
@@ -118,9 +116,6 @@ li a{
 .animate__animated.animate__headShake {
   --animate-duration: 2s;
 }
-
-
-
 
 .button {
   margin-right:50px ;
@@ -203,20 +198,11 @@ h4 {
   border-left: none;
   border-right: none;
  
-  
-  
-  
- 
-}
-p{
-  /*color: tomato;*/
 }
 
 button {
   width: 200px;
 }
-
-
 
 .letras {
   border: solid white;
@@ -380,6 +366,6 @@ h2{
   .nav{
     border-left:none ;
     border-right: none;
-    b
+    
   }
 }
