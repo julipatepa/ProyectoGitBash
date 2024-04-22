@@ -369,3 +369,8 @@ h2{
     
   }
 }
+.color_fondo{
+  background-image: url(back.avif);
+  display: flex;
+  height: 100%;
+}
