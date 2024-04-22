@@ -374,3 +374,44 @@ h2{
   display: flex;
   height: 100%;
 }
+.integrantes{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  
+  
+}
+.integrantes img{
+  display: flex;
+  padding: 10px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  width: 20%;
+  height: 20%;
+  padding-right: 0px;
+  
+
+} .integrantes p{
+  display: inline-flex;
+  justify-content:flex-start;
+  padding-right: 0px;
+}
+@media screen and (max-width: 600px) {
+  /* para pantallas pequeñas */
+  .integrantes p{
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /*  para pantallas medianas */
+  .integrantes p{
+    font-size: 16px;
+    
+    
+  }
+}
