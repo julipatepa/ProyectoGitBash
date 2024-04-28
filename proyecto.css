@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 
 .bodi .nav li ul a{
@@ -108,7 +109,9 @@ li a{
   overflow-y: auto;
   margin-top: 0;
   padding: 0;
- 
+  width: 100%;
+  justify-content:space-between ;
+  position: absolute;
 }
 
 .animate__animated.animate__headShake {
@@ -128,6 +131,7 @@ li a{
     justify-content: center;
     border-left:none ;
     border-right: none;
+    width: 100%;
   }
   .carrusel {
     border-left: solid white;
@@ -141,9 +145,11 @@ li a{
 /* pantallas medianas (entre 601px y 1024px de ancho) */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   .bodi {
-    font-size: 20px;
+    font-size: 22px;
     justify-content: center;
-    margin: 5px auto;
+    border-left:none ;
+    border-right: none;
+    width: 100%;
   }
   .carrusel {
     border-left: solid white;
@@ -181,6 +187,8 @@ li a{
   flex-wrap: nowrap;
   background-color: blue;
   z-index: 1;
+  border-top: solid white;
+  white-space: 100%;
   
 }
 .footer a{
@@ -275,6 +283,7 @@ button {
     border-right: none;
 
   }
+  
 }
 /*  pantallas grandes (más de 1024px de ancho) */
 @media screen and (min-width: 1025px) {
@@ -284,7 +293,9 @@ button {
     position: absolute;
     border-left:none ;
     border-right: none;
+    width: 100%;
   }
+  
 }
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   /*  para pantallas medianas */
@@ -294,7 +305,11 @@ button {
     position: absolute;
     border-left:none ;
     border-right: none;
+    width: 100%;
   }
+  
+  
+  
 }
 
 span{
@@ -305,8 +320,12 @@ label{
   color: white;
 }
 .letras{
-  color: red;
+  color: rgb(11, 240, 228);
+  text-decoration: none;
+  flex-direction: row;
+  border: none;
 }
+
 h2{
   color: white;
 }
@@ -314,35 +333,8 @@ h2{
 .contactos{
   display: inline-flex;
   flex-direction: row;
-  
 }
-@media screen and (max-width: 600px) {
-  /* para pantallas pequeñas */
-  .back {
-    background-color: #1032ee;
 
-  }
-}
-/*  pantallas grandes (más de 1024px de ancho) */
-@media screen and (min-width: 1025px) {
-  .back {
-    background-color: #1032ee;
-  }
-}
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-  /*  para pantallas medianas */
-  .back {
-    background-color: #1032ee;
-  }
-}
-@media screen and (max-width: 600px) {
-  /* para pantallas pequeñas */
-  .nav{
-    border-left:none ;
-    border-right: none;
-     
-  }
-}
 /*  pantallas grandes (más de 1024px de ancho) */
 @media screen and (min-width: 1025px) {
   .nav{
@@ -351,6 +343,7 @@ h2{
      
   }
 }
+
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   /*  para pantallas medianas */
   .nav{
@@ -359,29 +352,28 @@ h2{
     
   }
 }
+
 .color_fondo{
-  background-image: url(back.avif);
+  background-image: url(imagenfondo.avif);
+  background-size: cover;
   display: flex;
   height: 100%;
+  
 }
+
 .integrantes{
   display: flex;
   flex-direction: row;
-  padding: 10px;
   flex-wrap: wrap;
-  justify-content:baseline;
+  justify-content:space-between;
   padding-bottom: 0px;
   padding-left: 0px;
-  border: solid white;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  
+  width: 100%;
   
 }
+
 .integrantes img{
   display: flex;
-  flex-direction: column;
   flex-wrap: nowrap;
   padding: 10px;
   padding-bottom: 0px;
@@ -392,7 +384,8 @@ h2{
   border-radius: 100%;
   
 
-} .integrantes p{
+} 
+.integrantes p{
   display: flex;
   flex-direction: column;
   justify-content:space-between;
@@ -417,11 +410,48 @@ h2{
 }
 .Nosotros{
   background-color: blue;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  width: 100%;
 }
 .Nosotros p { 
   color:white;
-
+  padding-top: 10px ;
+  padding-bottom:10px ;
 }
 .Nosotros h2{
   color:white;
+  padding-top: 10px ;
+  padding-bottom:10px ;
+}
+#facebook_icon{
+  border-radius: 100%;
+  width: 50px;
+  
+}
+#instagram_icon{
+  border-radius: 100%;
+  width: 50px;
+}
+
+.letras1 .letras{
+  justify-content: center;
+  display:flex;
+  align-items: center;
+  flex-direction: row;
+
+}
+
+.letras1 p{
+  justify-content: center;
+  display:flex;
+  align-items: center;
+  flex-direction: row;
+  color: aqua;
+}
+
+#boton_inicio{
+  
+  background-color: rgb(3, 3, 133);
+
 }

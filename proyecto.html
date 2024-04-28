@@ -14,16 +14,15 @@
     <title>SpinMaster</title>
 </head>
 
-<body class=" back">
+<body >
     <div class="bodi">
-    <ul  class="nav">
+    <ul  class="nav" id="Home">
         <div class="row">
         <button onclick="enviarMensajeWhatsApp()"  type="button" class="btn btn-link p-3   imagen_wsp">
         <img class="rounded-5  imagen_wsp2"   src="wsp.png" alt="imagen_wsp"></button>
         </div>
         
         <img src="logo_proy.jpeg" alt="Logo" class="logo">     
-        <a href="" class="button">inicio</a>
         <a href="log_user.html" class="button">acceder</a>
 
 
@@ -90,6 +89,7 @@
             
             <img class="col" src="https://randomuser.me/api/portraits/women/86.jpg" alt="">
             <p class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            
             <img class="col" src="https://randomuser.me/api/portraits/women/45.jpg" alt="">
             <p class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
             <img class="col" src="https://randomuser.me/api/portraits/men/72.jpg" alt="">
@@ -125,8 +125,9 @@
 
     </section>  
     <footer class="footer">
+        
         <div class="row-cols-1 col-1 m-0 p-0 d-flex  text-end  " id="seccion1">
-        <img src="logo_proy.jpeg" alt="" class="logo_footer" > 
+        <img src="logo_proy.jpeg" alt="" class="logo_footer"> 
         
         
         
@@ -146,9 +147,9 @@
 
         <section class="row m-0 p-0 d-flex text-start   "> 
             <h4 class="text-start p-0" >Nuestras Redes Sociales</h4> <!--preguntar como agregar el icono-->
-            <p  class="col-5 p-0 m-0 d-flex text-start   "><a href="https://facebook.com" title="Ir a facebook" target="_blank"><img src="registro_facebook.png"
+            <p  class="col-5 p-0 m-0 d-flex text-start  "><a  href="https://facebook.com" title="Ir a facebook" target="_blank"><img id="facebook_icon" src="registro_facebook.png"
                         alt="icono facebook " width="15%">facebook</a> </p>
-            <p class="col-5 p-0 m-0 d-flex text-start   "><a href="https://instagram.com" title="Ir a Instagram" target="_blank"><img src="instagram.webp"
+            <p class="col-5 p-0 m-0 d-flex text-start   "><a href="https://instagram.com" title="Ir a Instagram" target="_blank"><img id="instagram_icon"  src="instagram.webp"
                         alt="icono instagram" width="10%">instagram</a></p>
 
             <!--<p><a href="https://facebook.com" title="Ir a facebook" target="_blank"><img src="imagenes/facebook-logo.png" alt="icono facebook " width="3%" ></a> </p>-->
@@ -176,7 +177,7 @@
         <nav > <!-- esto seria un nav u otra section??????-->
             <p class="mapa_sitio">Mapa del sitio:</p>
             <ul>
-                <li><a href="home.html">Home</a></li>
+                <li><a href="#Home">inicio</a></li>
                 <li><a href="Servicios.html">Servicios</a></li>
                 <li><a href="Cursos.html">Cursos Formativos</a></li>
                 <li><a href="Especializaciones.html">Especializacion</a></li>
