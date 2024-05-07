@@ -374,7 +374,8 @@ h2{
 
 .integrantes img{
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding: 10px;
   padding-bottom: 0px;
   padding-left: 0px;
@@ -388,10 +389,10 @@ h2{
 .integrantes p{
   display: flex;
   flex-direction: column;
-  justify-content:space-between;
+  justify-content:center;
   flex-wrap: nowrap;
   padding-right: 0px;
-  padding-left: 30px;
+  padding-left: 5px;
 }
 @media screen and (max-width: 600px) {
   /* para pantallas pequeñas */
@@ -438,7 +439,7 @@ h2{
   justify-content: center;
   display:flex;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
 
 }
 
@@ -446,7 +447,7 @@ h2{
   justify-content: center;
   display:flex;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   color: aqua;
 }
 
@@ -454,4 +455,37 @@ h2{
   
   background-color: rgb(3, 3, 133);
 
+}
+.check{
+  margin: none;
+}
+.sesion{
+  color: aqua;
+  justify-content: center;
+}
+.parrafo{
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 600px) {
+  /* para pantallas pequeñas */
+ .integrantes{
+  display: flex;
+  flex-direction: column;
+
+ }
+  
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /*  para pantallas medianas */
+  .integrantes{
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  
+  
 }
