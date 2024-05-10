@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-image: url('Lavarropas4.jpg');
+    background-size: cover;
     background-color: #e3e5e7;
 }
 

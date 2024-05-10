@@ -5,6 +5,7 @@ body {
     background-color: #f0f8ff; 
     color: #333; 
     background-image: url(Lavarropas2.jpeg);
+    background-size: cover;
 }
 
 .contenedor-introduccion {

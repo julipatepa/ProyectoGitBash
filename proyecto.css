@@ -104,16 +104,29 @@ li a{
 }
 
 .bodi {
-  background-color: blue;
   z-index: 1;
-  overflow-y: none;
-  margin-top: 0;
+  overflow-x: hidden; 
+  overflow-y: auto; 
+  margin: 0;
   padding: 0;
-  justify-content:space-between ;
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   
 }
 
+html, body {
+  overflow-x: hidden; 
+  overflow-y: auto; 
+  margin: 0;
+  padding: 0;
+}
+
+
+
+  
 .animate__animated.animate__headShake {
   --animate-duration: 2s;
 }
@@ -123,72 +136,18 @@ li a{
   padding: 0%;
  
 }
-/*pantallas pequeñas hasta 600px */
-@media screen and (max-width: 1px) {
- 
-  .bodi {
-    font-size: 22px;
-    justify-content: center;
-    border-left:none ;
-    border-right: none;
-    width: 100%;
-    
-  }
-  .carrusel {
-    border-left: solid white;
-    border-right: solid white;
-    border-left:none ;
-    border-right: none;
-  }
-  
-}
-/* pantallas medianas (entre 601px y 1024px de ancho) */
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-  .bodi {
-    font-size: 22px;
-    justify-content: center;
-    border-left:none ;
-    border-right: none;
-    width: 100%;
-  }
-  .carrusel {
-    border-left: solid white;
-    border-right: solid white;
-    
-    border-left:none ;
-    border-right: none;
-  }
-  
-}
 
-/*  pantallas grandes (más de 1024px de ancho) */
-@media screen and (min-width: 1025px) {
- 
-  .bodi {
-    font-size: 16px;
-    width: 100%;
-    align-items: center;
-    margin: 0px;
-  }
-  .carrusel {
-    
-    border-left:none ;
-    border-right: none;
-  }
-}
- .footer{
+.footer{
   color: beige;
-  
   border-top: none;
   position:absolute;
   justify-content: space-between;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  background-color: blue;
+  background-color: rgb(90, 90, 252);
   z-index: 1;
-  border-top: none;
-  
+  border-top: solid white;
   margin-top: 0px;
   
 }
@@ -196,7 +155,6 @@ li a{
   color: white;
 }
 h4 {
-  border: solid white;
   border-left: none;
   border-right: none;
  
@@ -206,24 +164,12 @@ button {
   width: 200px;
 }
 
-.letras {
-  border: solid white;
-  text-decoration: none;
-  border-left: none;
-  border-right: none;
-}
-.mapa_sitio {
-  border: solid white;
-  border-left: none;
-  border-right: none;
-}
-.nuestro_cursos {
-  border: solid white;
-  border-left: none;
-  border-right: none;
-}
+
+
 .logo_footer {
   border-radius: 100%;
+  width: 80px; 
+  
 }
 .pie {
   border: solid white;
@@ -414,8 +360,6 @@ h2{
   margin-bottom: 30px;
   justify-content: space-between;
   width: 100%;
-  background-image: url(imagenfondo.avif);
-  background-size: cover;
   margin-bottom: 0px;
  
   
@@ -472,6 +416,7 @@ h2{
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+  font-size: small;
 }
 @media screen and (max-width: 600px) {
   /* para pantallas pequeñas */
@@ -483,15 +428,35 @@ h2{
 
   
 }
-
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  /*  para pantallas medianas */
-  .integrantes{
+  /* para pantallas medianas */
+  .integrantes {
     display: flex;
     flex-direction: column;
-
   }
-
+}
+.footer li {
+  list-style-type: none;
   
+}
+.footer ul li { 
   
+  flex-direction: row;
+  justify-content:start;
+  display: flex;
+  padding-bottom: 5px;
+  padding-left: 0;
+  margin: 0;
+}
+.footer ul li a{
+  text-decoration: none;
+}
+.footer ul{
+  padding: 0;
+  margin: 0;
+}
+.spin{
+  float:right ;
+  text-align: center;
+ 
 }
