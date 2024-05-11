@@ -473,9 +473,9 @@ h2{
 
 .contenido {
   position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 10%;
+  left: 30%;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -490,13 +490,14 @@ h2{
 }
 
 .fondo_carrusel {
-  color: blue;
+  color:#007bff;
   z-index: 999;
 }
 
 .fondo_carr {
-  color: blue;
+  color:#007bff;
   z-index: 999;
+ 
 }
 
 .carrusel_img {
