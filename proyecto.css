@@ -444,18 +444,70 @@ h2{
 .imagen{
  height: 400px;
   width:100%;
+  opacity: 6;
+  z-index: -1;
 }
 .control_prev,
 .control_next {
-  background-color:#007bff;
-  color: black; 
+  
+  
   border: none; 
-  opacity: 2;
+  
   
 }
 
 .control_prev:hover,
 .control_next:hover {
   background-color:#007bff;
-  opacity: 2;
+ 
 }
+.carousel-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.content-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+}
+
+.fondo_carrusel,
+.fondo_carr,
+.carrusel_img {
+  margin-bottom: 20px;
+}
+
+.fondo_carrusel {
+  color: blue;
+  z-index: 999;
+}
+
+.fondo_carr {
+  color: blue;
+  z-index: 999;
+}
+
+.carrusel_img {
+  width: 80px;
+  border-radius: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  
+  .content-wrapper {
+      max-width: 90%; 
+  }
+}
+
