@@ -473,7 +473,7 @@ h2{
 
 .contenido {
   position: absolute;
-  top: 28%;
+  top: 30%;
   left:50%;
   transform: translate(-50%, -50%);
   display: flex;
