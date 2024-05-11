@@ -31,7 +31,7 @@
   background-color:#007bff; 
   width: 100%;
   z-index: 999;
-  display:inline-flex;
+  display:inline-block;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -463,17 +463,18 @@ h2{
 }
 .carousel-item {
   position: relative;
-  display: flex;
+  display: inline-block;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   height: 100%;
+  flex-wrap: nowrap;
 }
 
 .contenido {
   position: absolute;
-  top: 30%;
+  top: 50%;
   left:50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -506,10 +507,5 @@ h2{
   border-radius: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  
-  .content-wrapper {
-      max-width: 90%; 
-  }
-}
+
 

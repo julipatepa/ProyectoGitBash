@@ -4,3 +4,4 @@ function enviarMensajeWhatsApp() {
     var url = "https://api.whatsapp.com/send?phone=" + telefono + "&text=" + encodeURIComponent(mensaje);
     window.open(url, "_blank");
 }
+
