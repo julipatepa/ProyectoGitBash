@@ -99,10 +99,13 @@ li a{
 
 .logo {
   display: flex;
+  justify-content: center; 
   border-radius: 100%;
-  width: 40px;
-  height: 40px;
-  float: right;
+  width: 80px;
+  height: 80px;
+  
+  
+  
  
 }
 
@@ -155,14 +158,7 @@ h4 {
   flex-direction:row ;
   flex-wrap: nowrap;
 }
-.imagen_wsp {
-  padding: 0%;
-  display:flex;
-  flex-direction:row ;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: flex-end;
-}
+
 
 
 
@@ -207,13 +203,7 @@ h2{
 
 
 
-.color_fondo{
-  background-image: url(imagenfondo.avif);
-  background-size: cover;
-  display: flex;
-  height: 100%;
-  
-}
+
 
 .integrantes{
   display: flex;
@@ -370,7 +360,11 @@ h2{
 .img_integrantes{
     width: 80px;
     border-radius: 20%;
-    margin-left: 20px;
+    justify-content: space-between;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+   
 }
 .parrafo{
   display: flex;
@@ -383,8 +377,10 @@ h2{
 .contactanos{
   color: white;
   text-decoration: none;
-  padding-left: 0;
+  justify-content: center;
+  padding-top: 10px;
 }
+
 .imagen{
  height: 400px;
   width:100%;
@@ -449,6 +445,7 @@ h2{
 .carrusel_img {
   width: 80px;
   border-radius: 100%;
+  
 }
 
 
@@ -541,7 +538,6 @@ h2{
   flex-wrap: nowrap;
   background-color:#0056b3;
   z-index: 1;
-  border-top: solid white;
   margin-top: 10px;
   
 }
@@ -566,7 +562,7 @@ button {
   
 }
 .pie {
-  
+  border-top: none;
   border-bottom: none;
   border-left: none;
   border-right: none;
@@ -620,7 +616,7 @@ label{
   color: white;
 }
 .letras{
-  color: rgb(11, 240, 228);
+  color: white;
   text-decoration: none;
   flex-direction: row;
   border: none;
@@ -639,38 +635,17 @@ h2{
 
 
 
-.color_fondo{
-  background-image: url(imagenfondo.avif);
-  background-size: cover;
-  display: flex;
-  height: 100%;
-  
-}
+
 
 .integrantes{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content:space-between;
+  display: inline-block;
+  justify-content:center;
   padding-bottom: 0px;
-  padding-left: 0px;
   width: 100%;
   
 }
 
-.integrantes img{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 10px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  width: 100px;
-  padding-right: 0px;
-  border-radius: 100%;
-  
 
-} 
 .integrantes p{
   display: flex;
   flex-direction: column;
@@ -736,7 +711,7 @@ h2{
   display:flex;
   align-items: center;
   flex-direction: column;
-  color: aqua;
+  color: white;
 }
 
 
@@ -744,7 +719,7 @@ h2{
   margin: none;
 }
 .sesion{
-  color: aqua;
+  color:white;
   justify-content: center;
 }
 .parrafo{
@@ -757,7 +732,7 @@ h2{
 
  .integrantes{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 
  }
 
@@ -766,7 +741,7 @@ h2{
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   .integrantes {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
 }
 .footer li {
@@ -796,7 +771,7 @@ h2{
 .img_integrantes{
     width: 80px;
     border-radius: 20%;
-    padding-left: 10px;
+    justify-content: center;
 }
 .parrafo{
   display: flex;
@@ -804,6 +779,7 @@ h2{
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  font-size: 22px;
 
 }
 
@@ -932,22 +908,12 @@ h2{
 }
 .integrantes {
   display: flex;
-  justify-content: space-between; 
+  justify-content: center; 
   align-items: center; 
 }
 
-.persona {
-  display: flex;
-  flex: 1; 
-  text-align: center; 
-  margin: 30px;
-  justify-content: center;
-}
 
-.persona img {
-  width: 100px; 
-  border-radius: 50%; 
-}
+
 @keyframes fade-in {
   from {
     opacity: 0;
