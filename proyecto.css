@@ -566,6 +566,10 @@ button {
   border-bottom: none;
   border-left: none;
   border-right: none;
+  padding-bottom: 0px;
+}
+.mapa{
+  padding-bottom: 10px;
 }
 
 
