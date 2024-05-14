@@ -935,7 +935,7 @@ h2{
 
 @media (max-width: 768px) {
   .nav {
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center; 
     display: flex;
     align-items: center;
@@ -950,6 +950,7 @@ h2{
   .footer ul li{
     text-align: center;
     justify-content: center;
+    
   }
 }
 
