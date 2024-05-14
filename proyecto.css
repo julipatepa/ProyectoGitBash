@@ -485,7 +485,7 @@ h2{
 }
 .contenido-caja>img {
   align-content: center;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   background-color: white; 
   display: flex;
