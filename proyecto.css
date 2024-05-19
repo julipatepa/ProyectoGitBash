@@ -443,62 +443,82 @@ h2{
 
 
  
-.button {
-  margin: 0;
-  padding: 0;
-}
- 
 .cajas {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  justify-content: center;
+  background-color:#007bff;
+  
+  flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .caja {
-  width: calc(50% - 20px); 
-  height: 200px; 
-  background-color:cornflowerblue; 
+  flex-direction: column;
+  height: 100%; 
+  background-color:#007bff; 
   margin-bottom: 20px; 
-  border-radius: 10px;
-  box-sizing: border-box; 
-  padding: 10px; 
-  display: flex;
+  border-radius: 10px; 
   justify-content: center; 
   align-items: center; 
   overflow: hidden; 
-  border: 4px solid  cornflowerblue; 
+  width: 100%;
+
+}
+.caja>.texto{
+  
+  align-items: center;
 }
 
-.caja img {
-  width: 100%; 
-  height: 100%; 
-  object-fit: cover; 
-  border-radius: 10px; 
-}
+
 .contenido-caja {
-  position: relative;
+  align-content: center;
+  height: 350px;
+  background-color: white; 
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.contenido-caja>img {
+  align-content: center;
+  height: 100%;
+  object-fit: cover;
+  background-color: white; 
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
 }
 
-.texto {
-  position: absolute; 
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%);
+
+
+.texto { 
+  display:flex;
+  justify-content: center;
   color: #007bff; 
-  font-size: 22px; 
+  font-size: 100px; 
   font-weight: bold; 
   background-color: rgba(0, 0, 0, 0.5); 
   padding: 5px 10px;
+  width: 100%;
+  position: static;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* Esto asegura que el texto esté centrado horizontalmente */
+  font-size: small;
+  flex-wrap: wrap;
+}
+.texto p{
+  font-size: xx-large;
 }
 
-
-@media screen and (max-width: 600px) {
-  .caja {
-      width: 100%; 
-  }
-}
 
 
 .footer{
@@ -522,7 +542,9 @@ h4 {
  
 }
 
-
+button {
+  width: 200px;
+}
 
 
 
@@ -895,9 +917,8 @@ h2{
   .nav {
     flex-direction: column-reverse;
     justify-content: center; 
-    display: inline-block;
+    display: flex;
     align-items: center;
-    align-content: center;
   }
 }
 @media (max-width: 600px) {
